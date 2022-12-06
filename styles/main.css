@@ -1,0 +1,146 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #3cb1e7, #6942d3, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* #main-container {
+    /* background-image: url(../Images/tamagochi_01.png);
+    background-size: contain;
+     */
+/* } */
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+
+  .pulse {
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+  }
+  button {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+    
+  button {
+    background: none;
+    border: 2px solid;
+    font-family: monospace;
+    line-height: .2;
+    margin: 0.5em;
+    padding: 2em 2em;
+    border-radius: 100%;
+  }
+
+#choice-buttons {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#main-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: solid black 2px; */
+}
+
+#image-container {
+    height: 25%;
+}
+
+#console {
+    /* height: 100%; */
+    /* border: solid black 2px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+#console-top {
+    /* border: solid black 2px; */
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#console-middle {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#console-labels {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#console-buttons {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#console-bottom {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
